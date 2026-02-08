@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calendar</title>
+<link rel="stylesheet" href="style.css">
+<style>
+table {
+    border-collapse: collapse;
+}
+td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.circle {
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.hover-box {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 15px;
+    width: 200px;
+    top: 70px;
+    left: -70px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+td:hover .hover-box {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="section green-bg">
+    <h1 style="color:#004d1a; font-size:70px;">154 days</h1>
+    <h3>the best of days of my life</h3>
+</div>
+
+<div class="section white-bg">
+<table border="1">
+<tr>
+<td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td>
+</tr>
+<tr>
+<td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+</tr>
+<tr>
+<td>12</td><td>13</td><td>14</td>
+
+<td class="circle">15
+<div class="hover-box">
+<b>Mystery Date</b>
+<p>I am gonna take you to a few special places...</p>
+</div>
+</td>
+
+<td>16</td><td>17</td><td>18</td>
+
+<td class="circle">21
+<div class="hover-box">
+<b>Day Trip</b>
+<p>One Resort. One Day. Just the Two of Us.</p>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+
+<td class="circle">27
+<div class="hover-box">
+<b>My Favourite Day of the Year</b>
+<h2 style="text-align:center;">?</h2>
+</div>
+</td>
+
+<td>28</td>
+</tr>
+</table>
+</div>
+
+<div class="section white-bg">
+<a href="options.html" class="btn">Go Back</a>
+</div>
+
+</body>
+</html>

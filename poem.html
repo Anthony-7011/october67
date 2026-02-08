@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Poem</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .fade-text {
+            font-size: 30px;
+            font-style: italic;
+            transition: opacity 1s ease;
+        }
+    </style>
+</head>
+<body>
+
+<div class="section green-bg">
+    <div class="fade-text">
+        You should realise by now that I could say “I love you” in a million ways…
+    </div>
+</div>
+
+<div class="section white-bg">
+    <h2>Your Poem Goes Here</h2>
+</div>
+
+<div class="section white-bg">
+    <a href="options.html" class="btn">Go back</a>
+</div>
+
+<script>
+window.addEventListener('scroll', function() {
+    const text = document.querySelector('.fade-text');
+    let opacity = 1 - window.scrollY / 400;
+    text.style.opacity = opacity;
+});
+</script>
+
+</body>
+</html>
