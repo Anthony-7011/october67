@@ -22,13 +22,16 @@ td {
 .hover-box {
     display: none;
     position: absolute;
-    background: white;
+    background-color: #ffffff;  /* solid white */
+    opacity: 1;                 /* force full opacity */
     padding: 15px;
     width: 200px;
     top: 70px;
     left: -70px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    z-index: 1000;              /* ensure it appears above everything */
 }
+
 
 td:hover .hover-box {
     display: block;
