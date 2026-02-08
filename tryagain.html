@@ -4,6 +4,26 @@
     <title>Try Again</title>
     <link rel="stylesheet" href="style.css">
 </head>
+    <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const music = document.getElementById("bgMusic");
+
+if (!localStorage.getItem("musicTime")) {
+    music.currentTime = 0;
+} else {
+    music.currentTime = localStorage.getItem("musicTime");
+}
+
+music.play().catch(() => {});
+
+setInterval(() => {
+    localStorage.setItem("musicTime", music.currentTime);
+}, 1000);
+</script>
+
 <body>
 
 <div class="section">
