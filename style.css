@@ -81,3 +81,33 @@ button:hover, .btn:hover {
 .option-box:hover {
     transform: translateY(-10px);
 }
+.memory-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.memory-table td {
+    width: 25%;
+    padding: 25px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.memory-table img {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    margin: 10px 0;
+    transition: 0.3s ease;
+}
+
+.memory-table img:hover {
+    transform: scale(1.05);
+}
+
+.memory-table h3 {
+    margin-bottom: 10px;
+}
+
