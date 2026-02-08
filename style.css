@@ -118,10 +118,13 @@ button:hover, .btn:hover {
     line-height: 1.8;
 }
 .options-title {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 60px;
-    text-align: center;
     color: black;
 }
+
 
